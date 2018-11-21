@@ -2,10 +2,8 @@ package com.muzi.stu.thread;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Random;
-import java.util.TreeMap;
 
-public class ProducerConSumer {
+public class ClassicProducerConSumer {
 
     private static class Buffer{
         private Queue<Integer> queue;
@@ -21,12 +19,12 @@ public class ProducerConSumer {
                    while (queue.size() >= size){
                        wait();
                    }
+                   queue.add(value);
+                   System.out.println("produced:" + value);
+                   value++;
+                   notify();
+                   Thread.sleep(1000);
                }
-               queue.add(value);
-               System.out.println("produced:" + value);
-               value++;
-               notify();
-               Thread.sleep(1000);
            }
         }
         public void consume() throws InterruptedException{
