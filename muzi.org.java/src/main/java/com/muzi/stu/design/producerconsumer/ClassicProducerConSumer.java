@@ -1,4 +1,4 @@
-package com.muzi.stu.thread;
+package com.muzi.stu.design.producerconsumer;
 
 import java.util.LinkedList;
 import java.util.Queue;
