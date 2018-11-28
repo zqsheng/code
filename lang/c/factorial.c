@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-double factoril(unsigned int i)
+int factoril(unsigned int i)
 {
-    if(i < 1)
+    if(i = 1)
     {
         return 1;
     }
