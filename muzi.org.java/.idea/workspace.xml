@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ce9b95b-0f59-413b-aedf-16b1464a2b95" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/muzi/stu/numerical/NumericalUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/muzi/stu/string/StringUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/muzi/stu/design/producerconsumer/ProducerConsumerExample3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/muzi/stu/design/producerconsumer/ProducerConsumerExample3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/muzi/stu/thread/ClassicProducerConSumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/muzi/stu/design/producerconsumer/ClassicProducerConSumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/muzi/stu/thread/ProducerConsumerExample2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/muzi/stu/design/producerconsumer/ProducerConsumerExample2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/muzi/stu/thread/ProducerConSumer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/muzi/stu/thread/ProducerConSumer$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/muzi/stu/thread/ProducerConSumer$Buffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/muzi/stu/thread/ProducerConSumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql/mysql/instance-common.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../sql/mysql/instance-common.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql/mysql/sms-common.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../sql/mysql/sms-common.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,11 +19,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/muzi/stu/string/StringUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumericalUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/muzi/stu/numerical/NumericalUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -60,6 +76,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/muzi/stu/thread/ProducerConsumerExample3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/muzi/stu/thread/design/ProducerConsumerExample3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/muzi/stu/design/producerconsumer/ProducerConsumerExample2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/muzi/stu/string/StringOperate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/muzi/stu/numerical/NumberOperator.java" />
       </list>
     </option>
   </component>
@@ -79,7 +97,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="386" />
     <option name="y" value="78" />
     <option name="width" value="1370" />
@@ -88,67 +106,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <showMembers ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="stu-java" type="58d84e3e:PackageViewProjectNode" />
-              <item name="stu-java" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="stu-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muzi.org.java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stu-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muzi.org.java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stu-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muzi.org.java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stu-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muzi.org.java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stu-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muzi.org.java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stu-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="muzi.org.java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="stu" type="462c0819:PsiDirectoryNode" />
-              <item name="producerconsumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stu-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
             <path>
               <item name="stu-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
@@ -157,12 +121,24 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="muzi.org.java" type="cbb8eebc:String" user="muzi.org.java" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="stu-java" type="58d84e3e:PackageViewProjectNode" />
+              <item name="stu-java" type="616d4139:PackageViewModuleNode" />
             </path>
           </expand>
           <select />
@@ -181,6 +157,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\myworkspace\snippet\muzi.org.java\src\main\java\com\muzi\stu\numerical" />
+      <recent name="E:\myworkspace\snippet\muzi.org.java\src\main\java\com\muzi\stu\string" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -193,7 +175,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.NumericalUtils">
+    <configuration name="NumericalUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.muzi.stu.numerical.NumericalUtils" />
+      <module name="stu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.muzi.stu.numerical.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.muzi.stu.thread.ProducerConSumer" />
       <module name="stu-java" />
@@ -240,6 +233,15 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.NumericalUtils" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NumericalUtils" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -253,7 +255,8 @@
       <updated>1542442472271</updated>
       <workItem from="1542442476036" duration="7223000" />
       <workItem from="1542672742591" duration="3581000" />
-      <workItem from="1543405664778" duration="613000" />
+      <workItem from="1543405664778" duration="1078000" />
+      <workItem from="1543820338616" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="ii">
       <created>1543406071334</created>
@@ -266,15 +269,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11417000" />
+    <option name="totallyTimeSpent" value="11891000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32827735" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -286,7 +287,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -300,6 +301,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32827735" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +347,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muzi/stu/numerical/NumericalUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muzi/stu/string/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/muzi/stu/design/producerconsumer/ClassicProducerConSumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="901">
@@ -359,9 +385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -369,10 +392,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#368#377#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -397,10 +416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#368#377#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -408,9 +423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -428,6 +440,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muzi/stu/numerical/NumericalUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/muzi/stu/string/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
