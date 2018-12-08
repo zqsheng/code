@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1544254667 source:e:\myworkspace\snippet\lang\c\data-struct\rbtree\rbtree-test.c
+	<stdio.h>
+	"rbtree.h"
+
+1544253125 e:\myworkspace\snippet\lang\c\data-struct\rbtree\rbtree.h
+
+1544255841 source:e:\myworkspace\snippet\lang\c\data-struct\rbtree\rbtree.c
+	<stdlib.h>
+	<stdio.h>
+	"rbtree.h"
+

@@ -12,5 +12,6 @@ int factoril(unsigned int i)
 int main()
 {
     int i = 20;
-    printf("%d factorial value is %f \n",i,factoril(i));
+    
+    printf("%d factorial value is %d \n",i,factoril(i));
 }

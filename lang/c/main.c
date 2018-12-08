@@ -19,6 +19,4 @@ int main(int argc,char *argv[])
    pIcmp->icmp_code = 0;
    pIcmp->icmp_cksum = 0;
    printf("test is end");
-
-
 }
