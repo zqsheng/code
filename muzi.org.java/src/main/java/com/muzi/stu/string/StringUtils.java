@@ -1,7 +1,9 @@
 package com.muzi.stu.string;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -65,10 +67,13 @@ public class StringUtils {
 //        System.out.println(getNextEmail(email));
 //        String source = "张三(),历史,王五 周六，s2.cehis。fjdsjf";
 //        stringSplits(source);
-        String source = "zhansan(003)";
-        for(String s : new String[]{"sh(33)","sh（fdskf）","fds（kkk)","fdskf(dsdaas）","fdsdf()"})
-//            getBracketInContent(s);
-            System.out.println(getBracketOutContent(s));
-
+//        String source = "zhansan(003)";
+//        for(String s : new String[]{"sh(33)","sh（fdskf）","fds（kkk)","fdskf(dsdaas）","fdsdf()"})
+////            getBracketInContent(s);
+//            System.out.println(getBracketOutContent(s));
+    Set<String> set = new HashSet<String>();
+    set.add("test");
+    System.out.println(set.contains(3));
     }
+
 }
