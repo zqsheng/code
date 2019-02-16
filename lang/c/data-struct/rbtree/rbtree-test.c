@@ -12,6 +12,10 @@ void main()
     root = create_rbtree();
     printf("address:%p\n",root->node);
     printf("size of %d\n",sizeof(RBRoot));
-    insert_rbtree(root,a[0]);
+    for(int j = 0; j < LENGTH(a);j++)
+    {
+        insert_rbtree(root,a[j]);
+    }
+    preorder_rbtree(root);
 }
 

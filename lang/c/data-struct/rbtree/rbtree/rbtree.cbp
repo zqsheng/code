@@ -31,6 +31,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../rbtree-test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../rbtree.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../rbtree.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
