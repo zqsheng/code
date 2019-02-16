@@ -1,0 +1,10 @@
+db.getCollection("report").drop();
+db.getCollection("report").find({});
+db.report.update({"tenant":"6164F486C0000021F32DE3E7D06CCA9C"},{$set:{"rowcount":20,"colcount":20}});
+db.report.save({});
+db.report.remove({"ObjectId":"5c452aadb95b39cbd7f0c75d"});
+db.createCollection("mytest", { capped : true, autoIndexId : true, size : 6142800, max : 10000 } );
+show collections;
+db.mytest.insert({"name:":"zhangqisheng"});
+db.mytest.find({});
+db.mytest.update({"name":"zhangqisheng"},{$set:{"name":"liuwei"}});

@@ -22,7 +22,7 @@ RBRoot* create_rbtree()
 static Node* create_rbtree_node(Type key,Node *parent,Node *left,Node *right)
 {
     Node* p;
-    if((p = (Node *)malloc(sizeof(Node))) == NULL)
+    if(p = (Node *)malloc(sizeof(Node)) == NULL)
        return NULL;
     p->key = key;
     p->parent = parent;

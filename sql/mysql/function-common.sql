@@ -1,0 +1,48 @@
+DELIMITER $$
+
+CREATE FUNCTION HELLO()
+
+RETURNS VARCHAR(255)
+
+BEGIN 
+	RETURN 'HELLO,WORLD,I AM MYSQL FUNCTION ';
+END
+$$
+
+SELECT  HELLO();
+
+DROP FUNCTION IF EXISTS queryChildrenAreaInfo1;
+CREATE FUNCTION queryChildrenAreaInfo1(areaId INT)
+RETURNS VARCHAR(4000)
+BEGIN
+DECLARE sTemp VARCHAR(4000);
+DECLARE sTempChd VARCHAR(4000);
+
+SET sTemp='$';
+SET sTempChd = CAST(areaId AS CHAR);
+SET sTemp = CONCAT(sTemp,',',sTempChd);
+
+SELECT parentId INTO sTempChd FROM t_areainfo WHERE id = sTempChd;
+WHILE sTempChd <> 0 DO
+SET sTemp = CONCAT(sTemp,',',sTempChd);
+SELECT parentId INTO sTempChd FROM t_areainfo WHERE id = sTempChd;
+END WHILE;
+RETURN sTemp;
+END;
+
+DROP FUNCTION IF EXISTS queryChildrenAreaInfo;
+CREATE FUNCTION queryChildrenAreaInfo(areaId INT)
+RETURNS VARCHAR(4000)
+BEGIN
+DECLARE sTemp VARCHAR(4000);
+DECLARE sTempChd VARCHAR(4000);
+
+SET sTemp='$';
+SET sTempChd = CAST(areaId AS CHAR);
+
+WHILE sTempChd IS NOT NULL DO
+SET sTemp= CONCAT(sTemp,',',sTempChd);
+SELECT GROUP_CONCAT(id) INTO sTempChd FROM t_areainfo WHERE FIND_IN_SET(parentId,sTempChd)>0;
+END WHILE;
+RETURN sTemp;
+END;

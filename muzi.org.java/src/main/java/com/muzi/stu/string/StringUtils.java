@@ -62,8 +62,29 @@ public class StringUtils {
         String ret = source.replaceAll(regex,"");
         return ret;
     }
-    public static void  main(String[] args){
-//        String email = "zqsheng2@jiuqi.com.cn";
+    private static String getEmailDomail(String email){
+        String password = "";
+        String reg = "@+\\.";
+        Pattern pattern = Pattern.compile(reg);
+        Matcher matcher = pattern.matcher(email);
+        if(matcher.find()){
+            System.out.println(matcher.group());
+        }
+        return matcher.group();
+    }
+    private static void stringSplitTest(String email){
+        for(String s : email.split("@")){
+            System.out.println(s);
+        }
+    }
+    public static String toUpperCaseFirstOne(String s){
+        if(Character.isUpperCase(s.charAt(0)))
+            return s;
+        else
+            return (new StringBuilder()).append(Character.toUpperCase(s.charAt(0))).append(s.substring(1)).toString();
+    }
+    public static void  main(String[] args) {
+        String email = "zqsheng2@jiuqi.com.cn";
 //        System.out.println(getNextEmail(email));
 //        String source = "张三(),历史,王五 周六，s2.cehis。fjdsjf";
 //        stringSplits(source);
@@ -71,9 +92,19 @@ public class StringUtils {
 //        for(String s : new String[]{"sh(33)","sh（fdskf）","fds（kkk)","fdskf(dsdaas）","fdsdf()"})
 ////            getBracketInContent(s);
 //            System.out.println(getBracketOutContent(s));
-    Set<String> set = new HashSet<String>();
-    set.add("test");
-    System.out.println(set.contains(3));
+//    Set<String> set = new HashSet<String>();
+//    set.add("test");
+//    System.out.println(set.contains(3));
+//        getEmailDomail(email);
+        String emailSuffix = "jiuqi.com.cn";
+        String phone = "18976231612";
+        int DEFAULT_PASSWORD_LENGTH = 8;
+        String password = emailSuffix.split("\\.")[0];
+        password += phone.substring((11 - DEFAULT_PASSWORD_LENGTH + password.length()), 11);
+
+        System.out.println(password);
+
     }
+
 
 }
