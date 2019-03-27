@@ -6,7 +6,7 @@ import java.util.List;
 public class BackTrace {
 
     public static void main(String[] args) {
-        int n = 3;
+        int n = 10;
         int leftnum = n, rightnum = n;//左括号和右括号都各有n个
         ArrayList<String> results = new ArrayList<String>();//用于存放解空间
         parentheses("", results, leftnum, rightnum);
@@ -20,5 +20,13 @@ public class BackTrace {
             parentheses(sublist+")", results, left, right-1);
         if(left>0)
             parentheses(sublist+"(", results, left-1, right);
+    }
+
+    public static void combine(List<Integer> source,int start,int end,int target){
+        if(start == end){
+            return;
+        }
+        
+
     }
 }

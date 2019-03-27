@@ -83,6 +83,31 @@ public class StringUtils {
         else
             return (new StringBuilder()).append(Character.toUpperCase(s.charAt(0))).append(s.substring(1)).toString();
     }
+
+    /**
+     * StringBuilder StringBuffer 没用重写hashCode方法
+     */
+    public static void testStringHashCode(){
+        System.out.println("String、StringBuilder、StringBuffer HashCode Test");
+        String str = "hello,world!";
+        StringBuilder strBuilder = new StringBuilder(str);
+        StringBuffer strBuffer = new StringBuffer(str);
+        System.out.println(str.hashCode());
+        System.out.println(strBuilder.hashCode());
+        System.out.println(strBuffer.hashCode());
+    }
+    private static class Student{
+        public int id;
+        public String name;
+        public int sex;
+        public String address;
+    }
+    public static void testObjectHashCode(){
+        Student student = new Student();
+        System.out.println("common object hashcode test");
+        student.id = 32;
+        System.out.println(student.hashCode());
+    }
     public static void  main(String[] args) {
         String email = "zqsheng2@jiuqi.com.cn";
 //        System.out.println(getNextEmail(email));
@@ -101,8 +126,9 @@ public class StringUtils {
         int DEFAULT_PASSWORD_LENGTH = 8;
         String password = emailSuffix.split("\\.")[0];
         password += phone.substring((11 - DEFAULT_PASSWORD_LENGTH + password.length()), 11);
-
         System.out.println(password);
+        testStringHashCode();
+        testObjectHashCode();
 
     }
 
